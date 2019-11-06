@@ -1,0 +1,400 @@
+@charset "UTF-8";
+/*设置字符集*/
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+/*清除默认padding和margin*/
+fieldset, img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+/*清除表单类标签默认样式*/
+ul, ol {
+    list-style: none;
+}
+/*清除列表小圆点或序号*/
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "宋体";
+}
+/*清除文本框上下padding，并设置字体*/
+
+select, input {
+    vertical-align: middle;
+}
+/*设置下拉列表和表单的垂直对齐方式。*/
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+/*设置上述标签的字体大小和并清除margin*/
+textarea {
+    resize: none;
+}
+/*固定文本框大小，用户无法调整元素的尺寸。*/
+/*防止拖动*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+/*  设置图片的垂直方式，可以去掉图片底侧默认的3像素空白缝隙*/
+table {
+    border-collapse: collapse;
+}
+/*合并表格边框*/
+body {
+    font: 12px/150% Arial, Verdana, "\5b8b\4f53";
+    color: #666;
+    background: #fff
+}
+/*字号 行高 字体 合写。 Arial, Verdana指的是宋体，"\5b8b\4f53" 是宋体的另一种表示方式，工作中用得比较多*/
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1; /*IE/7/6兼容*/
+}
+/*清除浮动的方式，双伪元素清除浮动*/
+a {
+    color: #666;
+    text-decoration: none;
+}
+/*清除a下划线，并设置字体颜色*/
+a:hover {
+    color: #C81623;
+}
+/*设置悬浮时的颜色*/
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+/*设置标题元素的文本修饰和字号*/
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+/*用作css钩子，里面放一下比较小的内容*/
+.col-red {
+    color: #C81623 !important;
+}
+/*文档的颜色*/
+.w {
+    width: 1210px;
+    margin: 0 auto;
+
+}
+/*版心 */
+.fl {
+    float: left
+}
+/*左浮动*/
+.fr {
+    float: right
+}
+/*右浮动*/
+
+
+.fr li{
+    float:left;
+    padding: 0 10px;
+}
+.fr .line{
+    width: 1px;
+    height: 12px;
+    _font-size:0;
+    background-color: #ddd;
+    padding: 0;
+    margin-top: 9px;
+}
+
+.fr .jd-sj{
+    padding:0 20px 0 25px;
+}
+
+.jd-sj .sj{
+    position: absolute;
+    width: 15px;
+    height: 20px;
+    background: url(../images/sprite.png) no-repeat;
+    left: 5px;
+    top: 5px;
+}
+
+.al {
+    text-align: left
+}
+/*文本居左*/
+.ac {
+    text-align: center
+}
+/*文本居中*/
+.ar {
+    text-align: right
+}
+/*文本居右*/
+.hide {
+    display: none
+}
+/*隐藏元素*/
+
+.header{
+    height: 30px;
+    width: 100%;
+    line-height: 30px;
+    background-color: #f1f1f1;
+}
+
+.header .dt{
+    padding:0 20px 0 10px;
+    position: relative;
+}
+
+.dt i{
+    font:400 15px "宋体";
+    position: absolute;
+    width: 9px;
+    height: 4px;
+    top: 13px;
+    
+    overflow: hidden;
+    
+}
+
+.dt s{
+    position: absolute;
+    top: -11px;
+    left: 0;
+}
+
+
+.header .dt, .header .xsj{
+    padding: 0 20px 0 10px;
+    position: relative;
+}
+
+.header .dt i, .xsj i{
+    font: 400 15px "宋体";
+    position: absolute;
+    width: 9px;
+    height: 4px;
+    top: 13px;
+    
+    overflow: hidden;
+}
+
+.dt s, .xsj s{
+    position: absolute;
+    top: -11px;
+    left: 0;
+}
+
+.topbanner{
+    background-color: #8A25C6;
+}
+
+.topbanner .tp{
+    position: relative;
+}
+
+.topbanner .close-tpbanner{
+    width: 19px;
+    height: 19px;
+    background: url(../images/close.jpg) no-repeat;
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+
+.close-tpbanner:hover{
+    background-position: bottom;
+}
+
+.logo{
+    width: 360px;
+    height: 75px;
+    float: left;
+    padding-top: 25px;
+    background: url(../images/logo.png) no-repeat 0 25px;
+    position: relative;
+}
+
+.jd-a{
+    display: block;
+    width: 270px;
+    height: 60px;
+    text-indent: -2000em;
+}
+
+.db11{
+    position: absolute;
+    width: 180px;
+    height: 80px;
+    top: 10px;
+    left: 168px;
+}
+
+.search{
+    width: 538px;
+    height: 35px;
+    float: left;
+    margin-top: 25px;
+}
+
+.search input{
+    float: left;
+    width: 450px;
+    height: 36px;
+    border:2px solid #B61D1D;
+    padding-left: 4px;
+    color:#666;
+    font: 14px/32px "microsoft yahei";
+}
+
+.search button{
+    float: left;
+    width: 80px;
+    height: 36px;
+    background-color: #B61D1D;
+    font: 16px/36px "microsoft yahei";
+    color: #fff;
+    cursor: pointer;
+}
+
+.shoppingcar{
+    width: 76px;
+    padding-left: 43px;
+    float: right;
+    margin: 25px 85px 0 0;
+    border: 1px solid #DFDFDF;
+    line-height: 34px;
+    position: relative;
+}
+
+.shoppingcar .icon1{
+    position: absolute;
+    width: 16px;
+    height: 13px;
+    background: url(../images/sprite.png) no-repeat -1px -59px;
+    top: 10px;
+    left: 20px;
+}
+.shoppingcar .icon2{
+    font: 400 13px/13px simsin;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.shoppingcar .icon3{
+    position: absolute;
+    width: 16px;
+    height: 14px;
+    background-color: #C81623;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #fff;
+    top: -4px;
+    border-radius: 7px 7px 7px 0;
+}
+
+.hotwords{
+    width: 500px;
+    padding: 7px 0;
+    float: left;
+}
+.hotwords a {
+    margin-right: 6px;
+}
+
+.jd-nav {
+    width: 100%;
+    height: 44px;
+    border-bottom: 2px solid #B1191A;
+    margin-top: 100px;
+}
+
+ .dropdown {
+    width: 210px;
+    height: 44px;
+    float: left;
+    position: relative;
+    z-index: 10;
+    overflow: visible;
+    
+}
+.dropdown .dt a {
+    display: block;
+    font: 400 15px/44px "microsoft yahei";
+    background-color: #B1191A;
+    color: #fff;
+    padding-left: 10px;
+}
+.dropdown .dd {
+    height: 465px;
+    background-color: #C81623;
+    margin-top: 2px;
+}
+.dropdown .items {
+    height: 31px;
+    line-height: 31px;
+    border-left: 1px solid #B61D1D;
+    padding-left: 10px;
+    color: #fff;
+    font-size: 15px;
+    font-family: "microsoft yahei";
+}
+.dropdown .items h3 {
+    float: left;
+}
+.dropdown .items span {
+    float: right;
+    margin-right: 15px;
+    font-weight: 600;
+}
+
+.navitems {
+    width: 680px;
+    height: 44px;
+    float: left;
+}
+.navitems li {
+    float: left;
+}
+.navitems li a {
+    display: block;
+    color: #333;
+    font: 400 15px/44px "微软雅黑";
+    padding: 0 20px;
+}
+.navitems li a:hover {
+    color: #B1191A
+}
+.navitems li.new {
+    background: url(../images/new.jpeg) no-repeat right top;
+}
+
+.bike a {
+    float: right;
+    height: 44px;
+    width: 140px;
+    background: url(../images/bike.jpeg) no-repeat;
+}
+
+
+
+
+
+
+
+

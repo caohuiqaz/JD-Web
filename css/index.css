@@ -1,0 +1,185 @@
+@charset "UTF-8";
+.banner {
+	position: relative;
+}
+.banner .bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 604px;
+	background: url(../images/banner.jpeg)no-repeat top center;
+}
+.main{
+	position: relative;
+}
+
+.slider{
+	position: relative;
+	width: 730px;
+	height: 453px;
+	margin: 12px 0 0 220px;
+	float: left;
+	/*background-color: pink;*/
+}
+.circle {
+	position: absolute;
+	bottom: 8px;
+	left: 50%;
+	margin-left: -66px;
+}
+.circle li {
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	background-color: #3E3E3E;
+	float: left;
+	text-align: center;
+	line-height: 18px;
+	color: #fff;
+	margin: 0 2px;
+	cursor: pointer;
+}
+.circle li.current {
+	background-color: #B61B1F;
+}
+.arrow-l, .arrow-r {
+	position: absolute;
+	width: 28px;
+	width: 28px;
+	height: 62px;
+	top: 50%;
+	margin-top: -31px;
+	color: #fff;
+	font: 500 18px/62px "";
+	text-align: center;
+	background: rgba(0,0,0,.2);
+}
+.arrow-l {
+	left: 0;
+}
+.arrow-r {
+	right: 0;
+}
+.arrow-l:hover, .arrow-r:hover {
+	background: rgba(0,0,0,.4);
+	color: #fff;
+}
+
+.news{
+	
+	width: 248px;
+	height: 451px;
+	border: 1px solid #E4E4E4;
+	margin-top: 12px;
+	float: right;
+}
+.jd-news {
+	height: 200px;
+	border-bottom: 1px dashed #E4E4E4;
+}
+.jd-news .dt {
+	height: 43px;
+	border-bottom: 1px dotted #E8E8E7;
+	line-height: 43px;
+}
+.jd-news .dt h3, .fw .dt h3 {
+	float: left;
+	font: 14px/43px "micrsoft yahei";
+	color: #666;
+	padding-left: 15px;
+}
+.jd-news .dt a{
+	float: right;
+	font: 13px/43px "";
+	margin-right: 15px;
+}
+.jd-news .dd ul {
+	padding: 8px 0 0 15px;
+}
+.jd-news .dd li{
+	line-height: 28px;
+}
+.jd-news .dd li span {
+	font-weight: 700;
+	margin-right: 5px;
+}
+
+.fw {
+	height: 253px;
+}
+.fw .dt {
+	height: 43px;
+	border-bottom: 1px dotted #E8E8E7;
+	line-height: 43px;
+}
+.fw .dd {
+	height: 210px;
+}
+.fw ul li{
+	width: 61px;
+	height: 68px;
+	border: 1px solid #E4E4E4
+	border-top: 0;
+	float: left;
+	margin-left: -1px;
+}
+.fw ul li.fw-icon4, .fw ul li.fw-icon8, .fw ul li.fw-icon12{
+	border-right: 0;
+}
+.fw ul li a{
+	display: block;
+	width: 61px;
+	padding-top: 42px;
+	text-align: center;
+	position: relative;
+}
+.fw li i{
+	position: absolute;
+	top: 12px;
+	left: 18px;
+	width: 25px;
+	height: 25px;
+	background: url(../images/icon_lifeserv.png)no-repeat right top;
+}
+.fw-icon1 a i{
+	background-position: right 0px;
+}
+.fw-icon2 a i{
+	background-position: right -25px;
+}
+.fw-icon3 a i{
+	background-position: right -50px;
+}
+.fw-icon4 a i{
+	background-position: right -75px;
+}
+.fw-icon5 a i{
+	background-position: right -100px;
+}
+.fw-icon6 a i{
+	background-position: right -125px;
+}
+.fw-icon7 a i{
+	background-position: right -150px;
+}
+.fw-icon8 a i{
+	background-position: right -175px;
+}
+.fw-icon9 a i{
+	background-position: right -200px;
+}
+.fw-icon10 a i{
+	background-position: right -225px;
+}
+.fw-icon11 a i{
+	background-position: right -250px;
+}
+.fw-icon12 a i{
+	background-position: right -275px;
+}
+.fw .song{
+	background: url(../imagessong.png) no-repeat right top;
+}
+
+
